@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f8f5f0;
+    color: #432818;
+}
+header {
+    background: #f4e2d8;
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+header h1 {
+    font-size: 2.5rem;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+    margin: 0 0 0.5rem 0;
+}
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.whatsapp-btn {
+    display: inline-block;
+    background: #25d366;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.07);
+    transition: background 0.2s;
+}
+.whatsapp-btn:hover {
+    background: #128c7e;
+}
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.produtos {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.produto {
+    background: #fff8f0;
+    border-radius: 16px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+    padding: 1rem;
+    width: 290px;
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: transform 0.2s;
+}
+.produto:hover {
+    transform: translateY(-4px) scale(1.03);
+}
+.produto img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 12px;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+}
+.produto h3 {
+    font-family: 'Georgia', serif;
+    color: #99582a;
+    margin-top: 0;
+}
+.info {
+    background: #e9c46a20;
+    border-radius: 14px;
+    padding: 1.2rem 2rem;
+    margin-top: 2rem;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.info h2 {
+    color: #99582a;
+    margin-top: 0;
+}
+.info ul {
+    padding-left: 1.3em;
+}
+footer {
+    background: #f4e2d8;
+    text-align: center;
+    padding: 1rem;
+    color: #7b5e2c;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #e3d3c0;
+}
+@media (max-width: 900px) {
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .produto {
+        width: 95%;
+    }
+}
